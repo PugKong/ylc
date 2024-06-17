@@ -1,0 +1,4 @@
+[tools]
+typos = "latest"
+golangci-lint = "latest"
+go = "1.22.4"

@@ -15,7 +15,6 @@ var pokemonsTxt string
 
 type Names struct {
 	available []string
-	occupied  map[string]string
 	rand      io.Reader
 }
 
@@ -29,7 +28,6 @@ func NewNames() *Names {
 
 	return &Names{
 		available: available,
-		occupied:  make(map[string]string),
 		rand:      rand.Reader,
 	}
 }

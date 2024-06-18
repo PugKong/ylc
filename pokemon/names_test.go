@@ -17,8 +17,6 @@ func TestNewNames(t *testing.T) {
 		require.NotNil(t, names.available)
 		require.Greater(t, len(names.available), 1_000)
 
-		require.NotNil(t, names.occupied)
-
 		require.NotNil(t, names.rand)
 		require.Equal(t, rand.Reader, names.rand)
 	})

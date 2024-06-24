@@ -176,7 +176,7 @@ type result struct {
 
 var (
 	ErrResponseTooLong = errors.New("response is too long")
-	ErrBulbRepsponse   = errors.New("bulb error")
+	ErrBulbResponse    = errors.New("bulb error")
 )
 
 func (c *Controller) sendCommand(command command) ([]string, error) {
@@ -217,6 +217,6 @@ func (c *Controller) sendCommand(command command) ([]string, error) {
 			return result.Result, nil
 		}
 
-		return nil, fmt.Errorf("%w: %v", ErrBulbRepsponse, result.Error.Message)
+		return nil, fmt.Errorf("%w: %v", ErrBulbResponse, result.Error.Message)
 	}
 }

@@ -32,11 +32,11 @@ func (m *Manager) List() error {
 }
 
 func (m *Manager) printList(bulbs []Bulb) {
-	const fmt = " %12s %18s %18s\n"
+	const format = " %12s %18s %18s\n"
 
-	m.printer.Printf(fmt, "Name", "Address", "ID")
+	m.printer.Printf(format, "Name", "Address", "ID")
 	for _, bulb := range bulbs {
-		m.printer.Printf(fmt, bulb.Name, bulb.Addr, bulb.ID)
+		m.printer.Printf(format, bulb.Name, bulb.Addr, bulb.ID)
 	}
 }
 

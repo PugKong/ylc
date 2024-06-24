@@ -11,7 +11,7 @@ import (
 
 var (
 	rgbBackground *bool
-	rgbEffect     *yeelight.Effect = &yeelight.EffectSmooth
+	rgbEffect     = &yeelight.EffectSmooth
 	rgbDuration   *int
 )
 

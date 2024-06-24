@@ -11,7 +11,7 @@ import (
 
 var (
 	temperatureBackground *bool
-	temperatureEffect     *yeelight.Effect = &yeelight.EffectSmooth
+	temperatureEffect     = &yeelight.EffectSmooth
 	temperatureDuration   *int
 )
 

@@ -11,7 +11,7 @@ import (
 
 var (
 	brightBackground *bool
-	brightEffect     *yeelight.Effect = &yeelight.EffectSmooth
+	brightEffect     = &yeelight.EffectSmooth
 	brightDuration   *int
 )
 
